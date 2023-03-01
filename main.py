@@ -1,9 +1,6 @@
 # ------------------------------------------------------------------------ #
-# Title: Assignment 05
-# Description: Working with Dictionaries and Files
-#              When the program starts, load each "row" of data
-#              in "ToDoToDoList.txt" into a python Dictionary.
-#              Add the each dictionary "row" to a python list "table"
+# Title: Assignment 07
+# Description: Introducing The Pickle Module and Exception Handling 
 # ChangeLog (Who,When,What):
 # RRoot,1.1.2030,Created started script
 # Axel Adams, 2/27/2012, Added Exception Handling and Pickling
