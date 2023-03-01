@@ -14,7 +14,7 @@ In this assignment, we are tasked with researching and executing the pickle modu
 
 **Topic: What is Pickling?**
 
-The clearest explanation I have found for pickling was in “Think Python: How to Think Like a Computer Scientist” by Allen B Downey. Pickling is a way to overcome data with different types without having to manually convert that data to a coherent type - I.e. a byte stream. The pickle module coverts almost any object into a serialized string. Two operations dump() and load() allow the coder to convert a collection of data to a “pickled” file and then convert that back to a human-readable file, respectively.
+The clearest explanation I have found for pickling was in “Think Python: How to Think Like a Computer Scientist” by Allen B Downey. Pickling is a way to overcome data with different types without having to manually convert that data to a coherent type - I.e. a byte stream. The pickle module coverts almost any object into a serialized string. This serialized string preserves the relationship of complex data in arrays, nested lists, and dictionaries, for example - in contrast to a string, which does not repserve these complexities. Two operations dump() and load() allow the coder to convert a collection of data to a “pickled” file and then convert that back to a human-readable file, respectively.
 
 **Topic: Pickling the To Do List**
 
@@ -112,7 +112,7 @@ This task is not on your To Do List!
 ```
 In this instance, I use a while loop to after the input and try to remove the list containing the users input. If the user input a incorrect item that does not exist on the ToDoList, it generates an error message stating that this item is not on the to do list. There are a number of inbuilt exceptions that exist in Python. A summary of them is well-described in (https://docs.python.org/3/library/exceptions.html). This is useful because it describes specific exceptions that can be applied in designing a try/except structure. See Figure 5 for results of trying to remove an item that does exist on the ToDoList.
 
-Exception handling can also be use to manage if the user does not pick an item from the menu. A while loop is used to cycle through the To Do List menu and the options linked to the different options is placed within the “try:” clause and the except clause is used at the end of the script to prompt the user to select from the menu.
+Exception handling can also be used to manage a situation in which the user does not pick an item from the menu. A while loop is used to cycle through the To Do List menu and the options linked to the different options is placed within the “try:” clause and the except clause is used at the end of the script to prompt the user to select from the menu.
 
 **Conclusion:** 
 Pickling and exception handling are two useful tools for the developer. The pickle module allows the user to convert data to a binary format while preserving the complexity inherent to nested lists and dictionaries. Exception handling is a way of dealing with an incorrect user input that might result in an error that could result in execution of the program. In this case, I have used these two tools to improve the To Do List program from earlier in the course.
